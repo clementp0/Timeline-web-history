@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Timeline</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Timeline</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar">
+<!-- div class="dates">
+<div class="date"><a>1969 -</a></div>
+<div class="date"><a>1979 -</a></div>
+<div class="date"><a>1989 -</a></div>
+<div class="date"><a>1999 -</a></div>
+<div class="date"><a>2019 -</a></div>
+</div!-->
+                </div>
+            </div>
 
-<div class="timeline-container" id="timeline-1">
-  <div class="timeline-header">
-    <h2 class="timeline-header__title">History of the Web</h2>
-    <h3 class="timeline-header__subtitle">Lorem ipsum dolor sit amet</h3>
-  </div>
-  <div class="timeline">
-    <div class="timeline-item" data-text="ARPANET">
-      <div class="timeline__content"><img class="timeline__img" src="img/image-size-blue.png"/>
-        <h2 class="timeline__content-title">1969</h2>
-        <p class="timeline__content-desc">Il est difficile de parler du Web sans parler de l'Internet. Ce dernier a une histoire bien plus longue et prend ses sources dans l'ARPANET dont le premier essai a été effectué le 20 septembre 1969 pour tenter d'envoyer un message entre l'université de Californie à Los Angeles et l'Institut de recherche de Stanford. Le premier mot à transiter fut "login".</p>
-      </div>
-    </div>
-    <div class="timeline-item" data-text="OPEN SOURCE">
-      <div class="timeline__content"><img class="timeline__img" src="img/image-size-orange.png"/>
-        <h2 class="timeline__content-title">1985</h2>
-        <p class="timeline__content-desc">Première date marquante dans l’histoire des technologies depuis le premier numéro d’Archimag, la Free Software Foundation (Fondation pour le logiciel libre) est créée. Les objectifs : promouvoir le logiciel libre et défendre ses utilisateurs.</p>
-      </div>
-    </div>
-    <div class="timeline-item" data-text="WORLD WIDE WEB">
-      <div class="timeline__content"><img class="timeline__img" src="img/image-size-pink.png"/>
-        <h2 class="timeline__content-title">1991</h2>
-        <p class="timeline__content-desc">Tim Berners-Lee rend public le projet qu’il mène au Cern de Genève depuis deux ans. C’est l’arrivée du World Wide Web. Grâce à un navigateur, les utilisateurs connectés peuvent pour la première fois se rendre sur des sites et consulter des pages : une véritable révolution informatique !</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="demo-footer"><a href="" target="_blank">© Clément & Eliot ❤️</a></div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script  src="./script.js"></script>
+        </div>
+        <div class="timeline-container" id="timeline-1">
+            <div class="timeline-header">
+                <h2 class="timeline-header__title">History of the Web</h2>
+                <h3 class="timeline-header__subtitle">Lorem ipsum dolor sit amet</h3>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-text="ARPANET">
+                    <div class="timeline__content"><img class="timeline__img" src="img/image-size-blue.png"/>
+                        <h2 class="timeline__content-title">1969</h2>
+                        <p class="timeline__content-desc">Il est difficile de parler du Web sans parler de l'Internet. Ce dernier a une histoire bien plus longue et prend ses sources dans l'ARPANET dont le premier essai a été effectué le 20 septembre 1969 pour tenter d'envoyer un message entre l'université de Californie à Los Angeles et l'Institut de recherche de Stanford. Le premier mot à transiter fut "login".</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="OPEN SOURCE">
+                    <div class="timeline__content"><img class="timeline__img" src="img/image-size-orange.png"/>
+                        <h2 class="timeline__content-title">1985</h2>
+                        <p class="timeline__content-desc">Première date marquante dans l’histoire des technologies depuis le premier numéro d’Archimag, la Free Software Foundation (Fondation pour le logiciel libre) est créée. Les objectifs : promouvoir le logiciel libre et défendre ses utilisateurs.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="WORLD WIDE WEB">
+                    <div class="timeline__content"><img class="timeline__img" src="img/image-size-pink.png"/>
+                        <h2 class="timeline__content-title">1991</h2>
+                        <p class="timeline__content-desc">Tim Berners-Lee rend public le projet qu’il mène au Cern de Genève depuis deux ans. C’est l’arrivée du World Wide Web. Grâce à un navigateur, les utilisateurs connectés peuvent pour la première fois se rendre sur des sites et consulter des pages : une véritable révolution informatique !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="demo-footer"><a href="" target="_blank">© Clément & Eliot ❤️</a></div>
+        <!-- partial -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        <script  src="./script.js"></script>
 
-</body>
+    </body>
 </html>
