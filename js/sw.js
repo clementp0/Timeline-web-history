@@ -11,9 +11,9 @@ this.addEventListener('install', function(event) {
     event.waitUntil((async () => {
         let cache = await caches.open(cacheName);
         await cache.addAll([
-            'index.html'
-            'style.css',
-            'manifest.json',
+            '../index.html',
+            '../style.css',
+            '../manifest.json',
         ]);
     })());
 });

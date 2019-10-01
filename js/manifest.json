@@ -6,7 +6,7 @@
 "scope": "/",
   "start_url": "https://timeline.clpo.net",
   "theme_color": "#673ab6",
-  "background_color": "darkgrey",
+  "background_color": "#1c1f1d",
   "icons": [
     {
       "src": "/img/icon.png",
