@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="fr" >
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="UTF-8">
@@ -8,12 +8,27 @@
         <link rel="stylesheet" href="./style.css">
         <link rel="manifest" href="/js/manifest.json" />
         <script defer src="/js/site.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+        <script>
+            var OneSignal = window.OneSignal || [];
+            OneSignal.push(function() {
+                OneSignal.init({
+                    appId: "c5356f77-07a6-425b-a2ac-d8261c2089a3",
+                });
+            });
+        </script>
     </head>
     <body>
+        <div class="overlay" id="overlay">
+            <div class="quit"><a onclick="document.getElementById('overlay').style.display='none';return false;"><img src="https://www.queryly.com/images/whitecloseicon.png"></a></div>
+            <div class="quitm"><a href="#" onclick="document.getElementById('overlay').style.display='none';return false;"><img src="https://icon-library.net/images/ios-back-icon/ios-back-icon-10.jpg"></a></div>
+            <iframe class="fiche" id="fiche" name="fiche" src=""></iframe>
+        </div>
         <div class="header">
             <div class="progress-container">
                 <div class="progress-bar" id="myBar">
-<!-- div class="dates">
+                    <!-- div class="dates">
 <div class="date"><a>1969 -</a></div>
 <div class="date"><a>1979 -</a></div>
 <div class="date"><a>1989 -</a></div>
@@ -30,27 +45,92 @@
                 <h3 class="timeline-header__subtitle">Lorem ipsum dolor sit amet</h3>
             </div>
             <div class="timeline">
+
+                <!-- LIEN / Config -->
+
+
                 <div class="timeline-item" data-text="ARPANET">
-                    <div class="timeline__content"><img class="timeline__img" src="img/arpanet.jpeg"/>
-                        <h2 class="timeline__content-title">1969</h2>
-                        <p class="timeline__content-desc">Il est difficile de parler du Web sans parler de l'Internet. Ce dernier a une histoire bien plus longue et prend ses sources dans l'ARPANET dont le premier essai a été effectué le 20 septembre 1969 pour tenter d'envoyer un message entre l'université de Californie à Los Angeles et l'Institut de recherche de Stanford. Le premier mot à transiter fut "login".</p>
-                    </div>
+
+                    <a class="article" href="/fiches/exemple01.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/arpanet.jpeg"/>
+                            <h2 class="timeline__content-title">1969</h2>
+                            <p class="timeline__content-desc">Il est difficile de parler du Web sans parler de l'Internet. Ce dernier a une histoire bien plus longue et prend ses sources dans l'ARPANET dont le premier essai a été effectué le 20 septembre 1969 pour tenter d'envoyer un message entre l'université de Californie à Los Angeles et l'Institut de recherche de Stanford. Le premier mot à transiter fut "login".</p>
+                        </div>
+                    </a>
+
                 </div>
+
+                <!-- LIEN / Config -->
+
+
                 <div class="timeline-item" data-text="FREE SOFTWARE FOUNDATION">
-                    <div class="timeline__content"><img class="timeline__img" src="img/fsf.jpg"/>
-                        <h2 class="timeline__content-title">1985</h2>
-                        <p class="timeline__content-desc">Première date marquante dans l’histoire des technologies depuis le premier numéro d’Archimag, la Free Software Foundation (Fondation pour le logiciel libre) est créée. Les objectifs : promouvoir le logiciel libre et défendre ses utilisateurs.</p>
-                    </div>
+
+                    <a class="article" href="/fiches/exemple02.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content"><img class="timeline__img" src="img/fsf.jpg"/>
+                            <h2 class="timeline__content-title">1985</h2>
+                            <p class="timeline__content-desc">Première date marquante dans l’histoire des technologies depuis le premier numéro d’Archimag, la Free Software Foundation (Fondation pour le logiciel libre) est créée. Les objectifs : promouvoir le logiciel libre et défendre ses utilisateurs.</p>
+                        </div>
+                    </a>
                 </div>
+
+
+                <!-- LIEN / Config -->
+
                 <div class="timeline-item" data-text="WORLD WIDE WEB">
-                    <div class="timeline__content"><img class="timeline__img" src="img/image-size-pink.png"/>
-                        <h2 class="timeline__content-title">1991</h2>
-                        <p class="timeline__content-desc">Tim Berners-Lee rend public le projet qu’il mène au Cern de Genève depuis deux ans. C’est l’arrivée du World Wide Web. Grâce à un navigateur, les utilisateurs connectés peuvent pour la première fois se rendre sur des sites et consulter des pages : une véritable révolution informatique !</p>
-                    </div>
+
+                    <a class="article" href="/fiches/exemple03.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content"><img class="timeline__img" src="img/www.jpg"/>
+                            <h2 class="timeline__content-title">1991</h2>
+                            <p class="timeline__content-desc">Tim Berners-Lee rend public le projet qu’il mène au Cern de Genève depuis deux ans. C’est l’arrivée du World Wide Web. Grâce à un navigateur, les utilisateurs connectés peuvent pour la première fois se rendre sur des sites et consulter des pages : une véritable révolution informatique !</p>
+                        </div>
+                    </a>
                 </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item" data-text="FREE SOFTWARE FOUNDATION">
+
+                    <a class="article" href="/fiches/exemple02.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content"><img class="timeline__img" src="img/fsf.jpg"/>
+                            <h2 class="timeline__content-title">TEST</h2>
+                            <p class="timeline__content-desc">Première date marquante dans l’histoire des technologies depuis le premier numéro d’Archimag, la Free Software Foundation (Fondation pour le logiciel libre) est créée. Les objectifs : promouvoir le logiciel libre et défendre ses utilisateurs.</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- LIEN / Config -->
+
+                <div class="timeline-item" data-text="WORLD WIDE WEB">
+
+                    <a class="article" href="/fiches/exemple03.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content"><img class="timeline__img" src="img/www.jpg"/>
+                            <h2 class="timeline__content-title">TEST</h2>
+                            <p class="timeline__content-desc">Tim Berners-Lee rend public le projet qu’il mène au Cern de Genève depuis deux ans. C’est l’arrivée du World Wide Web. Grâce à un navigateur, les utilisateurs connectés peuvent pour la première fois se rendre sur des sites et consulter des pages : une véritable révolution informatique !</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- FIN DES DATES -->
+
+
+
             </div>
         </div>
-        <div class="demo-footer"><a href="" target="_blank">© Clément & Eliot ❤️</a></div>
+        <div class="demo-footer"><a href="https://x.clpo.net" target="_blank">©x.clpo.net 🏴</a></div>
         <!-- partial -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
         <script  src="js/script.js"></script>

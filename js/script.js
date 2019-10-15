@@ -56,15 +56,6 @@
 $("#timeline-1").timeline();
 
 
-
-
-
-
-
-
-
-
-
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -73,3 +64,15 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+function overlay() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+$(document).ready(function(){
+    $("a").click(function(e) {
+        e.preventDefault();
+        
+        $("#fiche").attr("src", $(this).attr("href"));
+    })
+});

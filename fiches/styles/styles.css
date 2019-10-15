@@ -1,0 +1,145 @@
+/* CONFIG - Configuration générale du body */
+
+body{
+    background-color: #323232;
+    height: 100%;
+    width: 100;
+    padding: 50px;
+
+}
+h1{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 4em;
+}
+h2{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.9em;
+}
+p{
+    font-family: 'Cardo', serif;
+    font-size: 1.1em;
+}
+a{
+    font-family: 'Cardo', serif;
+    font-size: 1.1em;
+}
+
+.header {
+    position: fixed;
+    top: 100;
+    z-index: 1;
+    width: 90%;
+    padding-right: 50px;
+    background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+    padding-right: 50px;
+    position: fixed;
+    z-index: 1;
+    width: 93%;
+    height: 3px;
+    background: transparent;
+    top: 0px;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 3px;
+    background: white;
+    width: 0%;
+}
+
+/* HEADER - Infos globales dates */
+
+
+
+.infos{
+    color: white;
+    width: 100%;
+    height: 150px;
+}
+.date{
+    float: left;
+    width: 50%
+}
+.date > h1, h2 {
+    margin: 0px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: capitalize;
+}
+.date > h2 {
+    letter-spacing: 0.2em;
+}
+.image{
+    float: right;
+    width: 50%;
+}
+.image > img {
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    float: right;
+    max-width: 300px;
+    max-height: auto;
+}
+.image > p {
+    float: right;
+    clear: both;    
+}
+
+
+/* CONTENT - Contenu des articles */
+
+.content{
+    color: white;
+    width: 100%;
+    clear: both;
+    float: right;
+    text-align: justify;
+}
+
+.content > h2 {
+    margin-top: 8%;
+    margin-bottom: 3%;
+}
+.event > a {
+    text-decoration-line: none;
+    color: white;
+    padding-right: 15px;
+}
+.ressources {
+    margin-bottom: 3%;
+}
+.ressources > a {
+    display: block;
+    text-decoration-line: none;
+    color: white;
+    padding-top: 15px;
+    clear: both;
+    width: 100%;
+}
+
+
+
+/* TAGS - Les tags sont masqués */
+
+
+
+.tags{
+    display: none;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.tags > a{
+
+    margin-right: 25px;
+    text-decoration-line: none;
+    color: white;
+    padding-top: 15px;
+    padding: 15px;
+    border-style: solid;
+    border-width:  1px;
+    border-radius: 9px;
+}
