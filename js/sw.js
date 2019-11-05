@@ -13,8 +13,9 @@ this.addEventListener('install', function(event) {
         await cache.addAll([
             '../index.html',
             '../style.css',
-            '/js/manifest.json'
+            '/js/manifest.json',
             '../fiches/',
+            '../fiches/styles',
         ]);
     })());
 });
