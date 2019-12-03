@@ -1,3 +1,8 @@
+body{
+    height: 100vh;
+    
+}
+
 @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
 .article{
     text-decoration: none;
@@ -180,6 +185,7 @@
 /* The progress container (grey background) */
 .progress-container {
     position: fixed;
+    top: 0px;
     z-index: 1;
     width: 100%;
     height: 3px;
@@ -277,5 +283,237 @@
     }
     .quitm{
         display: block;
+    }
+}
+
+
+
+
+
+
+
+/* ##### Header ##### */
+
+.heading {
+    margin-left: 5px;
+}
+
+/* ##### Suche ##### */
+.searchbar .search {
+    position: absolute;
+    border: 1px solid grey;
+    padding: 2px;
+    border-radius: 4px;
+    transition: all 0.15s ease;
+    z-index: 1;
+    top: 10px;
+}
+
+.searchbar input[type=text] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid lightgrey;
+    border: none;
+}
+
+.searchbar input[type=text]:active,
+.searchbar input[type=text]:focus {
+    border: none;
+    outline: none;
+}
+
+.searchbar button {
+    float: right;
+    cursor: pointer;
+    width: 44px;
+    height: 35px;
+    border: none;
+}
+
+.searchbar button:active,
+.searchbar button:focus {
+    border: none;
+    outline: none;
+}
+
+.searchbar button img {
+    width: 10px;
+    height: 10px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 5px 23px 0px 24px;
+    padding: 0;
+}
+
+/* ##### Buttons ##### */
+.btn-group .button {
+    background-color: #524d4d00;
+    border: none;
+    color: white;
+    padding: 11px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    float: left;
+    transition: all 0.15s ease;
+}
+
+.btn-group .button:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.btn-group .button:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.btn-group {
+    border: 1px solid white;
+    border-radius: 4px;
+    z-index: 1;
+    display: inline-block;
+}
+
+.btn-group .button:hover {
+    background-color: rgb(0, 122, 255);
+    color: white;
+}
+
+.btn-group .button:active,
+.btn-group .button:focus {
+    outline: none;
+    background-color: rgb(0, 122, 255);
+    color: white;
+}
+
+.buttons {
+    margin: 5px 0 0 16px;
+}
+
+/* ##### Boxen ##### */
+.container {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    border-radius: 10px;
+    margin: 1%;
+    padding: 18px 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: flex;
+    background-color: rgba(240, 240, 240, 0.95);
+    cursor: pointer;
+    width: 230px;
+}
+
+/* ##### Status LED ##### */
+.led {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(76, 217, 100);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.red {
+    background-color: rgb(255, 59, 48);
+}
+
+/* ##### Typografie ##### */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+h1 {
+    line-height: 2.5rem;
+    font-size: 42px;
+}
+
+p {
+    margin: 3px 3px 3px 13px;
+    font-size: 14px;
+}
+
+/* ##### Filter ##### */
+.filterDiv {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+/* ##### MediaQueries ##### */
+@media (max-width: 930px) {
+    .header {
+        display: inline-block;
+    }
+
+    .searchbar {
+        display: inline-block;
+        margin: 20px 0 -6px 7px;
+        width: 100%;
+    }
+
+    .container {
+        padding: 2%;
+    }
+
+    .buttons {
+        margin: 5px 0 0 10px;
+    }
+
+    hr {
+        margin: 1% 3%;
+
+    }
+}
+
+@media (max-width: 623px) {
+    .btn-group {
+        max-width: 354px;
+    }
+
+    .container {
+        padding: 3%;
+    }
+
+    .buttons {
+        margin: 5px 0 0 2px;
+    }
+
+    h1 {
+        line-height: 3rem;
+        font-size: 37px;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    hr {
+        display: none;
     }
 }

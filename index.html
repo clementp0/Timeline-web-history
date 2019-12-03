@@ -20,14 +20,8 @@
         </script>
     </head>
     <body>
-        <div class="overlay" id="overlay">
-            <div class="quit"><a onclick="closepc()"><img src="https://www.queryly.com/images/whitecloseicon.png"></a></div>
-            <div class="quitm"><a href="#" onclick="closemobile()"><img src="https://icon-library.net/images/ios-back-icon/ios-back-icon-10.jpg"></a></div>
-            <iframe class="fiche" id="fiche" name="fiche" src=""></iframe>
-        </div>
-        <div class="header">
             <div class="progress-container">
-                <div class="progress-bar" id="myBar">
+                <div class="progress-bar" id="myBar" style="width: 27.3932%;">
                     <!-- div class="dates">
 <div class="date"><a>1969 -</a></div>
 <div class="date"><a>1979 -</a></div>
@@ -38,6 +32,29 @@
                 </div>
             </div>
 
+        
+        <div class="searchbar">
+            <div class="search">
+                <input type="text" id="searchinput" onkeyup="searchFunction()" placeholder="Search for Jobs..">
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="container">
+            <div class="buttons">
+                <div class="btn-group">
+                    <button class="button active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="button" onclick="filterSelection('cars')"> Cars</button>
+                    <button class="button" onclick="filterSelection('animals')"> Animals</button>
+                    <button class="button" onclick="filterSelection('fruits')"> Fruits</button>
+                    <button class="button" onclick="filterSelection('colors')"> Colors</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <div class="quit"><a onclick="closepc()"><img src="https://www.queryly.com/images/whitecloseicon.png"></a></div>
+            <div class="quitm"><a href="#" onclick="closemobile()"><img src="https://icon-library.net/images/ios-back-icon/ios-back-icon-10.jpg"></a></div>
+            <iframe class="fiche" id="fiche" name="fiche" src=""></iframe>
         </div>
         <div class="timeline-container" id="timeline-1">
             <div class="timeline-header">
@@ -49,7 +66,7 @@
                 <!-- LIEN / Config -->
 
 
-                <div class="timeline-item" data-text="ARPANET">
+                <div class="timeline-item item filterDiv cars" data-text="ARPANET">
 
                     <a class="article" href="/fiches/exemple01.html" target="fiche" onclick="overlay()">
 
@@ -111,7 +128,7 @@
 
                 <!-- LIEN / Config -->
 
-                <div class="timeline-item" data-text="WORLD WIDE WEB">
+                <div class="timeline-item filterDiv cars" data-text="WORLD WIDE WEB">
 
                     <a class="article" href="/fiches/exemple03.html" target="fiche" onclick="overlay()">
 
