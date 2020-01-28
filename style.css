@@ -523,9 +523,6 @@ p {
     hr {
         display: none;
     }
-    .nav{
-        width: 101%;
-    }
 }
 
 
@@ -765,7 +762,11 @@ main footer ul li {
         display: inline;
         text-align: left;
     }
-     .nav{
+
+}
+
+@media screen and (max-width: 700px) {
+    .nav{
         width: 101%;
     }
 }
