@@ -560,7 +560,7 @@ p {
     position: absolute;
     z-index: 200;
     color: white;
-    width: 14.5px;
+    width: 23.5px;
 }
 #menu:checked ~ .menu {
     background-color: transparent;
@@ -770,6 +770,9 @@ main footer ul li {
 @media screen and (max-width: 767px) {
     .nav{
         width: 101%;
+    }
+    .menu img{
+        width: 14.5px;
     }
     .timeline-header__title{
         line-height: 2em;
