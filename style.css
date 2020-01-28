@@ -760,7 +760,7 @@ main footer ul li {
 @media screen and (min-width: 1024px) {
     main footer ul li {
         display: inline;
-        text-align: left;
+        text-align: left; 
     }
 
 }
