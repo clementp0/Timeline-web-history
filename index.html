@@ -19,7 +19,7 @@
             });
         </script>
     </head>
-    
+
     <!-- 
 class="timeline-item item filterDiv communication" 
 class="timeline-item item filterDiv logiciel" 
@@ -37,25 +37,32 @@ class="timeline-item item filterDiv politique"
             </div>
         </div>
 
+        <input type="checkbox" id="menu" />
+        <label for="menu" class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <img src="img/filter.svg">
+        </label>
+
+        <nav class="nav">
+            <ul>
+                <li><button class="button active" onclick="filterSelection('all')"> 📁 Voir tout</button></li>
+                <li><button class="button" onclick="filterSelection('communication')"> 📬 Communication</button></li>
+                <li><button class="button" onclick="filterSelection('logiciel')"> ⚙️ Logiciel</button></li>
+                <li><button class="button" onclick="filterSelection('structure')"> 🏛 Structure du Web</button></li>
+                <li><button class="button" onclick="filterSelection('inventions')"> 💡 Inventions matérielles</button></li>
+                <li><button class="button" onclick="filterSelection('service')"> 🖥 Service numérique</button></li>
+                <li><button class="button" onclick="filterSelection('langage')"> 👄 Langage </button></li>
+                <li><button class="button" onclick="filterSelection('politique')"> 💼 Politique </button></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
 
         <div class="searchbar">
             <div class="search">
-                <input type="text" id="searchinput" onkeyup="searchFunction()" placeholder="Rechercher..">
-            </div>
-        </div>
-        <hr class="hr">
-        <div class="container">
-            <div class="buttons">
-                <div class="btn-group">
-                    <button class="button active" onclick="filterSelection('all')"> Voir tout</button>
-                    <button class="button" onclick="filterSelection('communication')"> Communication</button>
-                    <button class="button" onclick="filterSelection('logiciel')"> Logiciel</button>
-                    <button class="button" onclick="filterSelection('structure')"> Structure du Web</button>
-                    <button class="button" onclick="filterSelection('inventions')"> Inventions matérielles</button>
-                    <button class="button" onclick="filterSelection('service')"> Service numérique</button>
-                    <button class="button" onclick="filterSelection('langage')"> Langage </button>
-                    <button class="button" onclick="filterSelection('politique')"> Politique </button>
-                </div>
+                <input type="text" id="searchinput" onkeyup="searchFunction()" placeholder="🔎 Rechercher..">
             </div>
         </div>
 
@@ -74,7 +81,7 @@ class="timeline-item item filterDiv politique"
                 <!-- LIEN / Config -->
 
 
-                <div class="timeline-item item filterDiv communication"  data-text="ARPANET">
+                <div class="timeline-item item filterDiv structure"  data-text="ARPANET">
 
                     <a class="article" href="/fiches/exemple01.html" target="fiche" onclick="overlay()">
 
@@ -91,7 +98,7 @@ class="timeline-item item filterDiv politique"
                 <!-- LIEN / Config -->
 
 
-                <div class="timeline-item item filterDiv inventions" data-text="FREE SOFTWARE FOUNDATION">
+                <div class="timeline-item item filterDiv logiciel structure" data-text="FREE SOFTWARE FOUNDATION">
 
                     <a class="article" href="/fiches/exemple01.html" target="fiche" onclick="overlay()">
 
@@ -106,43 +113,13 @@ class="timeline-item item filterDiv politique"
 
                 <!-- LIEN / Config -->
 
-                <div class="timeline-item" data-text="WORLD WIDE WEB">
+                <div class="timeline-item item filterDiv structure"  data-text="WORLD WIDE WEB">
 
                     <a class="article" href="/fiches/exemple03.html" target="fiche" onclick="overlay()">
 
 
                         <div class="timeline__content"><img class="timeline__img" src="img/www.jpg"/>
                             <h2 class="timeline__content-title">1991</h2>
-                            <p class="timeline__content-desc">Tim Berners-Lee rend public le projet qu’il mène au Cern de Genève depuis deux ans. C’est l’arrivée du World Wide Web. Grâce à un navigateur, les utilisateurs connectés peuvent pour la première fois se rendre sur des sites et consulter des pages : une véritable révolution informatique !</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- LIEN / Config -->
-
-
-                <div class="timeline-item" data-text="FREE SOFTWARE FOUNDATION">
-
-                    <a class="article" href="/fiches/exemple02.html" target="fiche" onclick="overlay()">
-
-
-                        <div class="timeline__content"><img class="timeline__img" src="img/fsf.jpg"/>
-                            <h2 class="timeline__content-title">TEST</h2>
-                            <p class="timeline__content-desc">Première date marquante dans l’histoire des technologies depuis le premier numéro d’Archimag, la Free Software Foundation (Fondation pour le logiciel libre) est créée. Les objectifs : promouvoir le logiciel libre et défendre ses utilisateurs.</p>
-                        </div>
-                    </a>
-                </div>
-
-
-                <!-- LIEN / Config -->
-
-                <div class="timeline-item filterDiv cars" data-text="WORLD WIDE WEB">
-
-                    <a class="article" href="/fiches/exemple03.html" target="fiche" onclick="overlay()">
-
-
-                        <div class="timeline__content"><img class="timeline__img" src="img/www.jpg"/>
-                            <h2 class="timeline__content-title">TEST</h2>
                             <p class="timeline__content-desc">Tim Berners-Lee rend public le projet qu’il mène au Cern de Genève depuis deux ans. C’est l’arrivée du World Wide Web. Grâce à un navigateur, les utilisateurs connectés peuvent pour la première fois se rendre sur des sites et consulter des pages : une véritable révolution informatique !</p>
                         </div>
                     </a>
@@ -155,7 +132,7 @@ class="timeline-item item filterDiv politique"
 
             </div>
         </div>
-        <div class="demo-footer"><a href="https://x.clpo.net" target="_blank">©x.clpo.net 🏴</a></div>
+
         <!-- partial -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
         <script  src="js/script.js"></script>
