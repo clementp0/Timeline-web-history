@@ -201,7 +201,7 @@ body{
     width: 100%;
     height: 90vh;
     position: fixed;
-    z-index: 101;
+    z-index: 210;
 }
 .overlay > iframe{
     border-style: none;
@@ -769,7 +769,7 @@ main footer ul li {
 
 @media screen and (max-width: 767px) {
     .nav{
-        width: 101%;
+        width: 100vw;
     }
     .menu img{
         width: 14.5px;
