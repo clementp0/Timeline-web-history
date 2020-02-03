@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" >
+<html lang="fr" id="noscroll" >
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="UTF-8">
@@ -18,6 +18,7 @@
                 });
             });
         </script>
+        <link rel="icon" type="image/png" href="https://i.ibb.co/3vN64KX/flavicon-timeline-real.png" />
     </head>
 
     <!-- 
@@ -47,16 +48,14 @@ class="timeline-item item filterDiv politique"
 
         <nav class="nav">
             <ul>
-                <li><button class="button active" onclick="filterSelection('all')"> 📁 Voir tout</button></li>
-                <li><button class="button" onclick="filterSelection('communication')"> 📬 Communication</button></li>
-                <li><button class="button" onclick="filterSelection('logiciel')"> ⚙️ Logiciel</button></li>
-                <li><button class="button" onclick="filterSelection('structure')"> 🏛 Structure du Web</button></li>
-                <li><button class="button" onclick="filterSelection('inventions')"> 💡 Inventions matérielles</button></li>
-                <li><button class="button" onclick="filterSelection('service')"> 🖥 Service numérique</button></li>
-                <li><button class="button" onclick="filterSelection('langage')"> 👄 Langage </button></li>
-                <li><button class="button" onclick="filterSelection('politique')"> 💼 Politique </button></li>
-                <li></li>
-                <li></li>
+                <li><a onclick="filterSelection('all')">📁 Voir tout</a></li>
+                <li><a onclick="filterSelection('communication')">📬 Communication</a></li>
+                <li><a onclick="filterSelection('logiciel')"> ⚙️ Logiciel</a></li>
+                <li><a onclick="filterSelection('structure')"> 🏛 Structure du Web</a></li>
+                <li><a onclick="filterSelection('inventions')"> 💡 Inventions matérielles</a></li>
+                <li><a onclick="filterSelection('service')"> 🖥 Service numérique</a></li>
+                <li><a onclick="filterSelection('langage')"> 👄 Langage </a></li>
+                <li><a onclick="filterSelection('politique')"> 💼 Politique </a></li>
             </ul>
         </nav>
 
@@ -73,17 +72,17 @@ class="timeline-item item filterDiv politique"
         </div>
         <div class="timeline-container" id="timeline-1">
             <div class="timeline-header">
-                <h2 class="timeline-header__title">History of the Web</h2>
-                <h3 class="timeline-header__subtitle">Lorem ipsum dolor sit amet</h3>
+                <h2 class="timeline-header__title">L'histoire du Web</h2>
+                <h3 class="timeline-header__subtitle">de 1969 à aujourd'hui</h3>
             </div>
             <div class="timeline">
 
                 <!-- LIEN / Config -->
 
 
-                <div class="timeline-item item filterDiv structure"  data-text="ARPANET">
+                <div class="timeline-item item filterDiv structure communication"  data-text="ARPANET">
 
-                    <a class="article" href="/fiches/exemple01.html" target="fiche" onclick="overlay()">
+                    <a class="article" href="/fiches/1969-Arpanet.html" target="fiche" onclick="overlay()">
 
 
                         <div class="timeline__content">
@@ -98,40 +97,957 @@ class="timeline-item item filterDiv politique"
                 <!-- LIEN / Config -->
 
 
-                <div class="timeline-item item filterDiv logiciel structure" data-text="FREE SOFTWARE FOUNDATION">
+                <div id="1970" class="timeline-item item filterDiv structure communication"  data-text="ARPANET NETWORK">
 
-                    <a class="article" href="/fiches/exemple01.html" target="fiche" onclick="overlay()">
+                    <a class="article" href="/fiches/1970-Arpanet-Network.html" target="fiche" onclick="overlay()">
 
 
-                        <div class="timeline__content"><img class="timeline__img" src="img/fsf.jpg"/>
-                            <h2 class="timeline__content-title">1985</h2>
-                            <p class="timeline__content-desc">Première date marquante dans l’histoire des technologies depuis le premier numéro d’Archimag, la Free Software Foundation (Fondation pour le logiciel libre) est créée. Les objectifs : promouvoir le logiciel libre et défendre ses utilisateurs.</p>
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/arpanet-network.jpg"/>
+                            <h2 class="timeline__content-title">1970</h2>
+                            <p class="timeline__content-desc">Un réseau Arpanet est établit entre Harvard, le MIT et BBN (compagnie qui a créé "the interface message processor" utilisé pour connecter un ordinateur sur le réseau) en 1970 grâce au Network Working Group (NWG) qui mettent au point le protocole de communication poste-à-poste (NCP) adopté par les sites ARPANET entre 1971 et 1972 qui sera, en 1973, remplacé par le TCP puis TCP/IP.</p>
                         </div>
                     </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv communication"  data-text="FIRST E-MAIL">
+
+                    <a class="article" href="/fiches/1971-First-Email.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/first-email.jpg"/>
+                            <h2 class="timeline__content-title">1971</h2>
+                            <p class="timeline__content-desc">Ray Tomlinson a envoyé le tout premier e-mail en 1971. Il a aussi prit la décision d'utiliser l'arobase "@" afin de séparer le nom d'utilisateur et celui de l'ordinateur (l'hôte, devenu le domaine désormais).</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv service"  data-text="PROJECT GUTENBERG">
+
+                    <a class="article" href="/fiches/1971-Project-Gutenberg.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/project-gutenberg.jpg"/>
+                            <h2 class="timeline__content-title">1971</h2>
+                            <p class="timeline__content-desc">C'est en 1971 que fût créé le projet Gutenberg. Fondé par Michael Hart, le projet vise à démocratiser de façon gratuite les livres électroniques.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv communication"  data-text="CYCLADES">
+
+                    <a class="article" href="/fiches/1972-Cyclades.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/cyclades.jpg"/>
+                            <h2 class="timeline__content-title">1972</h2>
+                            <p class="timeline__content-desc">En 1972, la France a lancé son propre projet "d'Arpanet français", appelé CYCLADES. C'est ainsi Louis Pouzin qui est chargé de lancer ce projet pour développer une recherche et une industrie informatique française. 
+
+                                Bien que CYCLADES ait finalement été clôturé en 1978, il a été néanmoins important et innovant de par son réseau partagé, ouvert, qui fonctionnait avec un système de transmission par paquet dont les américains se sont inspirés pour leur protocole TCP-IP.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv structure communication"  data-text="CONNEXIONS ALL OVER THE WORLD">
+
+                    <a class="article" href="/fiches/1973-Connexions-all-over-the-world.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/internet-map-1973.jpg"/>
+                            <h2 class="timeline__content-title">1973</h2>
+                            <p class="timeline__content-desc">Les deux premiers pays a être reliés à l'ARPANET furent la Norvège ainsi que le Royaume-Uni avec l'Université de Londres. Au total, 30 institutions y sont directement connectés comme BBN (contributeurs de la mise en place du réseau ARPANET), la NASA mais aussi Air Force. Et à cette époque, on ne comptait seulement que 42 ordinateurs hôtes connectés à 36 noeuds répartis aux Etats-Unis. Quelques mois après la création de la carte rassemblant toutes les connexions existantes à l'ARPANET à travers le monde, Internet est devenu accessible à l'international grâce à une liaison par satellite.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv structure"  data-text="TCP-IP">
+
+                    <a class="article" href="/fiches/1974-TCP-IP.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/tcp-ip.jpeg"/>
+                            <h2 class="timeline__content-title">1974</h2>
+                            <p class="timeline__content-desc">En mai 1974, Vinton Cerf et Robert Kahn publient leurs travaux dans un document nommé "A Program for Packet Network Intercommunication". Ils innitient ainsi la « suite » de deux protocoles : TCP (Transmission Control Protocol) et IP (Internet Protocol), qui permettront la transmission de paquets de données sur les réseaux et internet que l'on utilise toujours aujourd'hui. </p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv communication logiciel"  data-text="EMAIL CLIENT MSG">
+
+                    <a class="article" href="/fiches/1975-Email-Client.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/email-client-MSG-1975.png"/>
+                            <h2 class="timeline__content-title">1975</h2>
+                            <p class="timeline__content-desc">Le premier logiciel de messagerie personnalisable s'appelle "MSG". Il a été développé par John Vittal en 1975 où ce dernier décide d'ajouter certaines fonctionnalités comme "Reply", "Forward", et même une classification des messages. Cette interface facilitera l'expérience utilisateur qui restera encrée jusqu'à aujourd'hui dans nos habitudes de communications.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv inventions"  data-text="PREMIER ORDINATEUR PORTABLE EN COULEUR">
+
+                    <a class="article" href="/fiches/1977-Premier-Ordinateur-Portable-Couleur.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/Apple-II.jpg"/>
+                            <h2 class="timeline__content-title">1977</h2>
+                            <p class="timeline__content-desc">Le 16 avril 1977, l'Apple II est présenté pour la première fois au public, lors de la First West Coat Computer Faire. Il s'agit du premier ordinateur personnel avec des graphiques en couleur. Il a par la suite été mis en vente le 10 juin de la même année.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv inventions"  data-text="PC MODEM">
+
+                    <a class="article" href="/fiches/1977-pc-modem.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/pc-modem.png"/>
+                            <h2 class="timeline__content-title">1969</h2>
+                            <p class="timeline__content-desc">Dennis Hayes et Dale Heatherington ont lancé le 80-103A Modem, le premier Modem PC pour les particuliers. Ce dispositif a marqué le début d'une nouvelle ère de communication et a joué un rôle majeur dans l'explosion d'Internet.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv logiciel communication"  data-text="BULLETIN BOARD SYSTEM">
+
+                    <a class="article" href="/fiches/1978-Bulletin-Board-System.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/BBS.png"/>
+                            <h2 class="timeline__content-title">1978</h2>
+                            <p class="timeline__content-desc">Le premier Bulletin Board System (BBS) fût utilisé pour la première fois lors d'une tempête à Chicago en 1978, première forme de communauté en ligne de l'histoire.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv communication"  data-text="SPAM">
+
+                    <a class="article" href="/fiches/1978-Naissance-Du-Spam.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/spam.jpg"/>
+                            <h2 class="timeline__content-title">1978</h2>
+                            <p class="timeline__content-desc">En 1978, le SPAM est né ! Le premier e-mail commercial non-désiré fût envoyé à 600 utilisateurs d'Arpanet par Gary Thuerk.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv service"  data-text="MUD">
+
+                    <a class="article" href="/fiches/1978-MUD-Donjon-Multi-Utilisateur.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/mud.jpg"/>
+                            <h2 class="timeline__content-title">1978</h2>
+                            <p class="timeline__content-desc">Mud est un mode multi-joueurs en temps réel dans un monde virtuel, généralement à base de texte
+                                Les Muds incluent des éléments de jeu de rôle, de hack et de slash, joueur contre joueur, fiction interactive et discussion en ligne
+                                Un donjon multi-utilisateurs (MUD) est à la fois un style de jeu de rôle et le nom de l'un des jeux de rôle en ligne multijoueurs en texte original de ce genre. MUD a été créé par Roy Trubshaw et Richard Bartle en 1980. MUD a été modelé sur des jeux d'aventure textuels antérieurs et est devenu un jeu populaire à jouer sur Telenet, un premier Internet commercial.
+
+                                Les donjons multi-utilisateurs sont parfois appelés dimensions multi-utilisateurs ou domaines multi-utilisateurs.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv communication"  data-text="USENET">
+
+                    <a class="article" href="/fiches/1979-Usenet.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/usenet.png"/>
+                            <h2 class="timeline__content-title">1979</h2>
+                            <p class="timeline__content-desc">Usenet est un système en réseau de forums, créé en 1979. Afin d'être introduit dans un environnement Unix, il utilise le protocole UUCP. Par la suite, il sera accessible depuis le net grâce à l'utilisation du protocole NNTP. Il est d'ailleurs encore régulièrement utilisé de nos jours.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv langage"  data-text="PREMIER EMOTICONE">
+
+                    <a class="article" href="/fiches/1979-Le-Premier-Emoticone.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/first_emoticone.png"/>
+                            <h2 class="timeline__content-title">1979</h2>
+                            <p class="timeline__content-desc">En 1979 fût utilisé le premier emoticone textuel par Kevin MacKenzie, puis ré-utilisé en 1982 par Scott Fahlman en 1982 qui proposa de l'utiliser visuellement après une blague. On estime à 6 milliards le nombre d'émoticones utilisé chaque jour dans le monde</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv logiciel"  data-text="ENQUIRE SOFTWARE">
+
+                    <a class="article" href="/fiches/1980-Enquire-Software.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/enquire_software.jpg"/>
+                            <h2 class="timeline__content-title">1980</h2>
+                            <p class="timeline__content-desc">ENQUIRE est un projet de logiciel écrit en 1980 par Tim Berners-Lee au CERN, prédécesseur du World Wide Web. Il s’agissait d’un simple programme hypertexte qui présentait certaines des mêmes idées que le Web et le Web sémantique, mais qui était différent de plusieurs manières importantes.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv structure"  data-text="SYSTEME DE NOMS DE DOMAINE">
+
+                    <a class="article" href="/fiches/1984-Noms-De-Domaine.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/Nom-de-domaine-illustration.jpg"/>
+                            <h2 class="timeline__content-title">1984</h2>
+                            <p class="timeline__content-desc">Une adresse Internet ou nom de domaine est l'équivalent de votre adresse postale sur Internet. C'est la manière dont vos contacts et clients vont trouver votre site Internet sur le web. Un nom de domaine est donc indispensable lors de la création de votre site web ! Il s’agit de votre identité commerciale sur le web.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv logiciel"  data-text="OPEN SOURCE">
+
+                    <a class="article" href="/fiches/1985-Open-Source.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/opensource.jpg"/>
+                            <h2 class="timeline__content-title">1985</h2>
+                            <p class="timeline__content-desc">Le terme "open source" signifie que le code source d'un logiciel est public et accessible. Le logiciel en question peut alors être modifié et diffusé par n'importe quel individu. L’initiative open source impose dix exigences pour la licence des logiciels open source. 
+
+                                Le principe: 
+                                Le code source d’un logiciel est rendu public : toute personne peut le lire, développer le logiciel et copier le code. Chacun peut utiliser le logiciel gratuitement et le diffuser. Il n’est à aucun moment nécessaire de disposer d’une licence supplémentaire. Les logiciels open source offrent en général une solution alternative aux logiciels commerciaux payants.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv communication"  data-text="COMMUNAUTES VIRTUELLES">
+
+                    <a class="article" href="/fiches/1985-Communautes-Virtuelles.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/communaute-virtuelle.jpg"/>
+                            <h2 class="timeline__content-title">1985</h2>
+                            <p class="timeline__content-desc">Une communauté virtuelle sur internet ou sur un autre support interactif (SMS et mobiles) est constituée d’un groupe de personnes qui interagissent entre elles, partagent et utilisent des informations en relation avec leurs centres d’intérêts, caractéristiques démographiques ou activités professionnelles.Les communautés virtuelles peuvent être utilisées à des fins marketing dans le cadre du marketing viral ou tribal ou dans une logique de relations publiques.Les premières communautés virtuelles apparues sur Internet sont apparues sous la forme de forums thématiques.Le terme de communautés virtuelles a été progressivement abandonné avec la montée en puissance des réseaux sociaux.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv logiciel"  data-text="FREE SOFTWARE FUNDATION">
+
+                    <a class="article" href="/fiches/1985-free-software-fundation.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/fsf.jpg"/>
+                            <h2 class="timeline__content-title">1985</h2>
+                            <p class="timeline__content-desc">La Free Software Fundation ou FSF, est une organisation américaine à but non lucratif fondée en 1985 par Richard Stallman et, financée par les hackers du projet, dont l'objectif était la promotion du logiciel libre et la défense des utilisateurs. La naissance de l'Open Source part de cette fondation.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv communication"  data-text="WELL WHOLE EARTH LECTRONIC LINK">
+
+                    <a class="article" href="/fiches/1985-Well-Whole-Earth-Lectronic-Link.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/thewell.jpeg"/>
+                            <h2 class="timeline__content-title">1985</h2>
+                            <p class="timeline__content-desc">The WELL (aussi connu sous les noms de WELL et Whole Earth 'Lectronic Link) est une communauté virtuelle qui se regroupe autour d'un fournisseur d'accès à Internet. Il s'agit de l'une des plus anciennes communautés virtuelles encore en opération.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv communication service"  data-text="IRC">
+
+                    <a class="article" href="/fiches/1988-irc.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/IRC-server.jpg"/>
+                            <h2 class="timeline__content-title">1988</h2>
+                            <p class="timeline__content-desc">Internet Relay Chat a été développé par Jarkko Oikarinen en août 1988 à l'université de Oulu en Finlande. L'objectif de ce chat en temps réel était de partager instantanément des informations ou actualités importantes pour l'avancée de certains scientifiques. Cet IRC fut hébergé sur le premier serveur au monde appelé tolsun.oulu.fi.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv politique"  data-text="PREMIERE CYBER ATTAQUE MAJEURE">
+
+                    <a class="article" href="/fiches/1988-premiere-cyber-attaque-majeure-sur-internet.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/moteur-cyberattaque.jpg"/>
+                            <h2 class="timeline__content-title">1988</h2>
+                            <p class="timeline__content-desc">En novembre 1988, le ver Morris a déclenché la première cyberattaque reconnue et signalée de logiciel malveillant, infectant à l'époque environ 5% de tous les ordinateurs connectés à Internet. Le logiciel malveillant, développé par l'étudiant Robert Morris pour estimer tout simplement l'étendue d'Internet, a infecté les machines ciblées à plusieurs reprises, provoquant leur ralentissement et leur plantage.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv service"  data-text="AOL">
+
+                    <a class="article" href="/fiches/1989-aol.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/aol.jpg"/>
+                            <h2 class="timeline__content-title">1989</h2>
+                            <p class="timeline__content-desc">Quand Apple s'est retiré du programme AppleLink en 1989, le projet a été renommé et America Online est né. AOL, qui existe toujours aujourd'hui, a par la suite rendu Internet populaire auprès des internautes moyens.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv structure service"  data-text="WWW">
+
+                    <a class="article" href="/fiches/1989-www.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/www.jpg"/>
+                            <h2 class="timeline__content-title">1989</h2>
+                            <p class="timeline__content-desc">En mars 1989, Tim Berners-Lee, un scientifique du CERN, a soumis une proposition visant à mettre au point une méthode radicalement nouvelle pour relier et partager l'information sur Internet. Le document s'intitulait Gestion de l'information : Une proposition, et a d'abord été publié dans le numéro de mars de MacWorld, puis redistribué en mai 1990. C'est ainsi que le web est né.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv structure"  data-text="PREMIER FSI COMMUTE COMMERCIAL">
+
+                    <a class="article" href="/fiches/1990-premier-fsi-commute-commercial.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/fsi.jpg"/>
+                            <h2 class="timeline__content-title">1990</h2>
+                            <p class="timeline__content-desc">Un fournisseur d'accès à Internet ou FAI (aussi appelé fournisseur de service Internet ou FSI) est un organisme (généralement une entreprise) offrant une connexion à Internet, le réseau informatique mondial.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv communication service"  data-text="NAISSANCE D'EFNET">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/eris-free-network.png"/>
+                            <h2 class="timeline__content-title">1990</h2>
+                            <p class="timeline__content-desc">EFnet est le descendant moderne du réseaux IRC original. Au départ, la plupart des réseau IRC ne formaient qu'un seul réseau, que d'autres serveurs pouvaient rejoindre sans conditions. Quand, en août 1990, le serveur eris.berkeley.edu resta le seul et dernier serveur permettant aux autres serveurs de se connecter, l'opérateur de serveur Greg Lindahl se sépara du réseau pour créer EFnet.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv structure"  data-text="GUERRE DES PROTOCOLES">
+
+                    <a class="article" href="/fiches/1991-guerre-des-protocoles.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/guerre-des-protocoles.jpg"/>
+                            <h2 class="timeline__content-title">1991</h2>
+                            <p class="timeline__content-desc">En 1991 la technologie Internet a été introduite dans le réseau paneuropéen EuropaNet par Dai Davies. S'est ainsi ouverte la guerre des protocoles pour savoir lequel donnerait de meilleurs résultats entre les interconnexions de systèmes ouverts (OSI) ou TCP/IP. </p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv structure service"  data-text="FIRST WEB PAGE">
+
+                    <a class="article" href="/fiches/1991-the-first-web-page.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/first-web-page.png"/>
+                            <h2 class="timeline__content-title">1991</h2>
+                            <p class="timeline__content-desc">En 1991 fût créé par Tim Berners-Lee la première page web de l'histoire. Son contenu expliquait ce qu'était le World Wide Web.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv inventions"  data-text="NAISSANCE DU MP3">
+
+                    <a class="article" href="/fiches/1991-naissance-mp3.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/mp3.jpeg"/>
+                            <h2 class="timeline__content-title">1991</h2>
+                            <p class="timeline__content-desc">Le MPEG-1/2 Audio Layer III, plus connu sous son abréviation de MP3, est la spécification audio du standard MPEG-1/MPEG-2.
+                                Il s'agit d'un format de compression audio avec perte permettant une réduction importante de la taille du flux de données audio, tout en conservant une qualité de restitution couramment jugée acceptable, donnant le choix du débit selon le compromis taille-qualité souhaité. C'est aussi l'un des formats de musique numérique les plus répandus</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv inventions"  data-text="PREMIERE WEBCAM">
+
+                    <a class="article" href="/fiches/1991-premiere-webcam.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/first-webcam.jpg"/>
+                            <h2 class="timeline__content-title">1991</h2>
+                            <p class="timeline__content-desc">La première webcam fut branchée au département des sciences informatiques de l'université de Cambridge en 1991 par James Quentin Stafford-Fraser et Paul Jardetzky (afin que les membres du département informatique puissent surveiller le niveau de la cafetière et d'éviter ainsi de se déplacer pour rien) puis connectée à Internet en 1993 et coupée le 22 août 2001.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <!--
+<div class="timeline-item item filterDiv structure"  data-text="OUVERTURE CENTRE DES ARCHIVES (ANMT)">
+
+<a class="article" href="/fiches/1993-centre-archives-monde-du-travail-anmt.html" target="fiche" onclick="overlay()">
+
+
+<div class="timeline__content">
+<img class="timeline__img" src="img/anmt.jpeg"/>
+<h2 class="timeline__content-title">1993</h2>
+<p class="timeline__content-desc">Les Archives nationales du monde du travail (ANMT) sont un service à compétence nationale du ministère français de la culture, situé à Roubaix (Nord-Pas-de-Calais).
+
+Elles ont été inaugurées et ouvertes au public en octobre 1993, sous le nom de Centre des archives du monde du travail (CAMT).</p>
+</div>
+</a>
+
+</div>
+-->
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv structure logiciel"  data-text="MOSAIC">
+
+                    <a class="article" href="/fiches/1993-mosaic.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/mosaic.jpg"/>
+                            <h2 class="timeline__content-title">1993</h2>
+                            <p class="timeline__content-desc">NCSA Mosaic est un navigateur web développé à partir de fin 1992 au centre de recherches américain NCSA (National Center for Supercomputing Applications), d'abord pour les plateformes X Window (X Mosaic), puis Macintosh (Mac Mosaic) et enfin Windows. C'est le navigateur qui a rendu le World Wide Web populaire.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv structure politique"  data-text="WEB DEVIENT PUBLIC">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/web-public.jpg"/>
+                            <h2 class="timeline__content-title">1993</h2>
+                            <p class="timeline__content-desc">Le CERN renonce aux droits d’auteur sur les logiciels du World Wide Web et permet leur mise dans le domaine public. À la fin de l’année, les médias grand public remarquent ainsi Internet et le Word Wide Web. C'est également le début des noms de domaine .gov et .org avec la Maison-Blanche et les Nations Unies qui se mettent en ligne.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv communication service"  data-text="FIRST HOMEPAGE BLOG">
+
+                    <a class="article" href="/fiches/1994-blogs.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/first-homepage.jpg"/>
+                            <h2 class="timeline__content-title">1994</h2>
+                            <p class="timeline__content-desc">La première "Personal Homepage" a été créée par Justin Hall, étudiant au collège de Swarthmore, sur Links.net. A cette période, le terme de "Blog" n'apparait pas encore on parle à ce moment-là de page personnelle.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv service"  data-text="PREMIER ACHAT SUR INTERNET">
+
+                    <a class="article" href="/fiches/1994-premier-achat-internet.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/first-ordering.png"/>
+                            <h2 class="timeline__content-title">1994</h2>
+                            <p class="timeline__content-desc">En effet, c'est en plein été 1994 que le premier achat est effectué sur le web. Un Américain dénommé Dan Kohn avait lancé un site web appelé Net Market et sa première vente fut un CD de Sting (l’album Ten Summoner’s Tales). L’album coûtait 12,48 dollars plus les frais de livraison et le paiement s’est fait en ligne, via un moyen sécurisé.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv communication service"  data-text="DALNET">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/dalnet.png"/>
+                            <h2 class="timeline__content-title">1994</h2>
+                            <p class="timeline__content-desc">DALnet est un réseau IRC fondé en 1994 par les membres du canal de discussion #startrek sur le réseau EFnet. Le nom DAL vient du dragon Dalvenjah Foxfire dans le roman fantastique de Thorarinn Gunnarsson. Passé un moment, DALnet était l'un des cinq plus gros réseaux IRC et a largement suivi l'explosion d'internet à la fin des années 1990. Au début de l'année 2007, DALnet est le 6e plus gros réseau IRC, avec 30 000 utilisateurs, 15 000 salons et 40 serveurs.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv politique"  data-text="RAPPORT MARTRE">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/rapport-martre.jpg"/>
+                            <h2 class="timeline__content-title">1994</h2>
+                            <p class="timeline__content-desc">Le rapport Martre, publié par la Documentation française, marque la volonté des pouvoirs publics de développer l’intelligence économique en France. Travail de veille et gestion stratégique de l’information sont mis en avant pour développer la compétitivité des entreprises.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv logiciel structure"  data-text="NETSCAPE NAVIGATOR">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/netscape-navigator.png"/>
+                            <h2 class="timeline__content-title">1994</h2>
+                            <p class="timeline__content-desc">Netscape Navigator est un navigateur web créé en 1994 par une équipe venant de NCSA Mosaic. Netscape Navigator a été le premier navigateur commercial distribué à grande échelle. Dès son lancement, il a connu un succès fulgurant, dominant le marché au milieu des années 1990 et reléguant vite son ancêtre NCSA Mosaic aux oubliettes. Il fut tout de fois progressivement remplacé au lancement d'Internet explorer, fourni gratuitement avec windows.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv service communication"  data-text="GEOCITIES">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/geocities.webp"/>
+                            <h2 class="timeline__content-title">1994</h2>
+                            <p class="timeline__content-desc">GeoCities est un service d'hébergement Web gratuit fondé par David Bohnett et John Rezner fin 1994. C'est l'un des sites de création et d'hébergement de pages personnelles (ancêtre des blogs) les plus populaires de l'époque. Le site est racheté par Yahoo! en janvier 1999 pour 3,57 milliards de dollars. Dix ans plus tard, le 26 octobre 2009, il est finalement fermé, Yahoo! n'étant pas parvenu à l'intégrer à sa plate-forme de services et à monétiser son audience.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv service"  data-text="COMMERCIALISATION D'INTERNET">
+
+                    <a class="article" href="/fiches/1995-commercialisation-internet.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/commercialisation-internet.png"/>
+                            <h2 class="timeline__content-title">1995</h2>
+                            <p class="timeline__content-desc">La commercialisation d'Internet fait référence à la gestion ou à la gestion de services en ligne principalement à des fins financières.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv service communication"  data-text="PREMIER JOURNAL EN LIGNE">
+
+                    <a class="article" href="/fiches/1995-premier-journal-en-ligne.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/journal-en-ligne.png"/>
+                            <h2 class="timeline__content-title">1995</h2>
+                            <p class="timeline__content-desc">Un journal en ligne, journal électronique, ou encore e-journal est un journal publié sur internet qui s'intéresse à toutes les informations politiques, économiques, culturelles ou sportives.
+                                La plupart des journaux électroniques sont gratuits, mais certains exigent de s'inscrire ou de s'abonner pour accéder à toutes les actualités.
+                                La majorité des journaux en ligne s'appuient sur les formats HTML et PDF parfois utilisés indépendamment.
+                                Une grande majorité des journaux électroniques sont financés grâce aux annonces et aux publicités.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv service"  data-text="NAISSANCE DE GEANTS DU WEB">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/ebay.gif"/>
+                            <h2 class="timeline__content-title">1995</h2>
+                            <p class="timeline__content-desc">Création de plusieurs géants du Web d'aujourd'hui, notamment Yahoo, Amazon, eBay et Hotmail. Mais aussi l'arrivée d'institutions sur le web telles que le Vatican.</p>
+                        </div>
+                    </a>
+
+                </div>
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv langage"  data-text="NAISSANCE DE JAVA">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/java.jpg"/>
+                            <h2 class="timeline__content-title">1995</h2>
+                            <p class="timeline__content-desc">1995 est en effet l'année du lancement du Framework Java, un langage de programmation orienté objet créé par James Gosling et Patrick Naughton, employés de Sun Microsystems.  C'est également le lancement de Javascript, créé par Brendan Eich, qui est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs avec l'utilisation (par exemple) de Node.js.</p>
+                        </div>
+                    </a>
+
+                </div>
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv logiciel"  data-text="INTERNET EXPLORER">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/internet-explorer.jpg"/>
+                            <h2 class="timeline__content-title">1995</h2>
+                            <p class="timeline__content-desc">La première version d'Internet Explorer, le nouveau navigateur web développé par Microsoft, sort le 16 décembre 1995. Elle est ainsi installée par défaut sur leur nouveau système d'exploitation : "Windows 95". Entre la fin des années 1990, quand il détrône Netscape Navigator, jusque vers 2012, c'est le navigateur web le plus utilisé au monde.</p>
+                        </div>
+                    </a>
+
+                </div>
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv service"  data-text="BNF FRANCOIS MITTERRAND">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/bnf.jpg"/>
+                            <h2 class="timeline__content-title">1995</h2>
+                            <p class="timeline__content-desc">1995, l’année d’inauguration du site de la Bibliothèque nationale de France François Mitterrand. Elle entrepose des collections royales constituées depuis la fin du Moyen Âge. La BNF a une mission de collecte, d’archivage et d’entretien (conservation, restauration), en particulier de tout ce qui se publie ou s'édite en France.</p>
+                        </div>
+                    </a>
+
+                </div>
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv inventions"  data-text="CD-ROM FRANCISÉ">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/cd-rom.jpg"/>
+                            <h2 class="timeline__content-title">1995</h2>
+                            <p class="timeline__content-desc">Commercialisé depuis 1982 par Philips et Sony, le CD-Rom est francisé en cédérom en 1996. Véritable révolution, cette technologie permet de stocker des fichiers numériques en grande quantité. L’arrivée du cédérom puis celle de la clé USB précipiteront la chute de la bonne vieille disquette.</p>
+                        </div>
+                    </a>
+
+                </div>
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv communication service"  data-text="CREATION D'HOTMAIL">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/hotmail.jpg"/>
+                            <h2 class="timeline__content-title">1996</h2>
+                            <p class="timeline__content-desc">Le 4 juillet 1996, le premier service de consultation de messagerie électronique gratuit via le web, créé par Sabeer Bhatia et Jack Smith, vient de naitre et s'appelle HoTMaiL.  Les premières utilisations du nom font clairement ressortir en majuscules les lettre H,T,M et L en hommage au langage HTML, utilisé pour écrire le contenu d'une page web. Le succès est immédiat avec dès décembre 1996 plus de 1 million d'utilisateurs actifs.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv inventions communication"  data-text="NOKIA 9000">
+
+                    <a class="article" href="/fiches/1996-nokia-9000.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/nokia-9000.jpg"/>
+                            <h2 class="timeline__content-title">1996</h2>
+                            <p class="timeline__content-desc">Le Nokia 9000 Communicator est le premier produit Nokia de la série Communicator, commercialisé en 1996</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv service politique"  data-text="E-ADMINISTRATION">
+
+                    <a class="article" href="/fiches/1997-e-administration.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/e-administration.jpg"/>
+                            <h2 class="timeline__content-title">1997</h2>
+                            <p class="timeline__content-desc">L'administration électronique fait ses premiers pas en France avec le programme PAGSI généralisant les sites internet publics et la mise en ligne des formulaires administratifs. Destinée à améliorer la communication entre les administrations, mais aussi avec les usagers, elle s'accélère en 2000 avec la création du portail Service-public.fr. En 2014, la France est désignée championne de l'e-administration par l'ONU.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv service"  data-text="GALLICA">
+
+                    <a class="article" href="/fiches/1997-gallica.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/gallica.jpg"/>
+                            <h2 class="timeline__content-title">1997</h2>
+                            <p class="timeline__content-desc">Gallica est la bibliothèque numérique de la Bibliothèque nationale de France et de ses partenaires. 
+
+                                En libre accès depuis 1997, elle regroupe plus de 5 millions de documents (des livres au format Epub, des journaux, des revues, des images, des enregistrements sonores, des cartes, des manuscrits et des vidéos).
+
+                                Devenir la "bibliothèque virtuelle de l'honnête homme" est l'ambition de Gallica lors de son lancement.
+
+                                Enrichie sans cesse, cette bibliothèque offre aujourd'hui un accès libre à plus de trois millions de documents.</p>
+                        </div>
+                    </a>
+
                 </div>
 
 
                 <!-- LIEN / Config -->
 
-                <div class="timeline-item item filterDiv structure"  data-text="WORLD WIDE WEB">
 
-                    <a class="article" href="/fiches/exemple03.html" target="fiche" onclick="overlay()">
+                <div class="timeline-item item filterDiv service"  data-text="PREMIER TRADUCTEUR EN LIGNE">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
 
 
-                        <div class="timeline__content"><img class="timeline__img" src="img/www.jpg"/>
-                            <h2 class="timeline__content-title">1991</h2>
-                            <p class="timeline__content-desc">Tim Berners-Lee rend public le projet qu’il mène au Cern de Genève depuis deux ans. C’est l’arrivée du World Wide Web. Grâce à un navigateur, les utilisateurs connectés peuvent pour la première fois se rendre sur des sites et consulter des pages : une véritable révolution informatique !</p>
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/altavista.webp"/>
+                            <h2 class="timeline__content-title">1997</h2>
+                            <p class="timeline__content-desc">Le moteur de recherche AltaVista lance fin 1997 un service de traduction gratuit de l’anglais vers cinq autres langues (allemand, espagnol, français, italien, portugais) et vice versa, dénommé Babel Fish. La page web originale et la traduction apparaissent en vis-à-vis à l’écran. On peut également traduire n’importe quel texte court en faisant un copier-coller dans l’interface web.</p>
                         </div>
                     </a>
+
                 </div>
+                <!-- LIEN / Config -->
 
 
-                <!-- FIN DES DATES -->
+                <div class="timeline-item item filterDiv service"  data-text="CREATION DE NETFLIX">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
 
 
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/netflix.png"/>
+                            <h2 class="timeline__content-title">1997</h2>
+                            <p class="timeline__content-desc">Créé en 1997 à Los Gatos en Californie et lancé l’année suivante, Netflix est au départ un service de location de DVD par correspondance. Pour un forfait fixe, les Américains peuvent louer un nombre illimité de films et séries qui leur sont livrés chez eux par la poste. Reed Hastings, diplômé d’intelligence artificielle à l’Université Stanford, a eu l’idée de créer cette société après avoir payé 40 dollars de pénalité pour avoir rendu en retard un film qu’il avait loué.</p>
+                        </div>
+                    </a>
 
+                </div>
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv structure service"  data-text="GOOGLE">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/google-accueil-1998.webp"/>
+                            <h2 class="timeline__content-title">1998</h2>
+                            <p class="timeline__content-desc">Trois personnes installées dans un garage en Californie. C'est ainsi que l'aventure de Google commence. Concurrençant Yahoo!, fondé en 1994, Google devient le premier moteur de recherche mondial dès 2010. 30 000 milliards de documents y sont aujourd'hui indexés, et il gère près de 3,5 milliards de requêtes quotidiennes. Google Inc. diversifie son activité dès 2002 avec ses produits Google News, Youtube, Chrome, Gmail, etc.</p>
+                        </div>
+                    </a>
+
+                </div>
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv logiciel communication"  data-text="NAPTSER">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/le-napster-et-le-peer-to-peer-l.jpg"/>
+                            <h2 class="timeline__content-title">1998</h2>
+                            <p class="timeline__content-desc">En 1998, Shawn Fanning a créé Napster, le premier logiciel de P2P (Pear To Pear) à réunir des millions d’utilisateurs à travers le monde. Le jeune étudiant avait créé une société pour tenter de monétiser son logiciel, mais il n’a jamais réussi à négocier des licences d’exploitation des catalogues de musique auprès des maisons de disques. Sourdes et obstinées, elles ont refusé catégoriquement d’ouvrir le dialogue, et déclenché en 2001 la mise à mort de Napster devant les tribunaux</p>
+                        </div>
+                    </a>
+
+                </div>
+                <!-- LIEN / Config -->
+
+
+                <div class="timeline-item item filterDiv inventions"  data-text="PREMIERE LISEUSE">
+
+                    <a class="article" href="/fiches/coming-soon.html" target="fiche" onclick="overlay()">
+
+
+                        <div class="timeline__content">
+                            <img class="timeline__img" src="img/premiere-liseuse.png"/>
+                            <h2 class="timeline__content-title">1999</h2>
+                            <p class="timeline__content-desc">Le Rocket eBook lancé par NuvoMedia et l'éditeur Barnes & Noble serait la première liseuse. Malgré cette tentative - et quelques autres -, c'est la Kindle d'Amazon, en 2007, qui démocratise ce nouvel outil entièrement dédié à la lecture de livres numériques. Fonctionnant grâce à la technique du papier électronique, les liseuses offrent un rendu visuel et un confort de lecture proche de ceux du papier.</p>
+                        </div>
+                    </a>
+
+                </div>
             </div>
         </div>
+
+        <!-- FIN DES DATES -->
+
 
         <!-- partial -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>

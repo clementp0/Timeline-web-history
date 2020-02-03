@@ -16,6 +16,7 @@ body{
     position: relative;
 }
 .timeline__content-title {
+    text-shadow: 2px 2px 5px #000000;
     font-weight: normal;
     font-size: 66px;
     margin: -10px 0 0 0;
@@ -622,6 +623,7 @@ p {
     display: block;
     border-bottom: 1px solid grey;
 }
+
 .nav ul li a {
     position: relative;
     display: block;
@@ -632,6 +634,9 @@ p {
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+}
+.nav ul li a:hover{
+    cursor: pointer;
 }
 .nav ul li a:before {
     position: absolute;
@@ -769,7 +774,7 @@ main footer ul li {
 
 @media screen and (max-width: 767px) {
     .nav{
-        width: 101%;
+        width: 100vw;
     }
     .menu img{
         width: 14.5px;

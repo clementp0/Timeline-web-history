@@ -68,12 +68,15 @@ function myFunction() {
 function overlay() {
     document.getElementById('overlay').style.opacity = 1;
     document.getElementById('overlay').style.pointerEvents = 'auto';
+    document.getElementById('noscroll').style.overflow = 'hidden';
 }
 
 function closepc(){
     document.getElementById('overlay').style.opacity = 0;
     document.getElementById('overlay').style.pointerEvents = 'none';
+    document.getElementById('noscroll').style.overflow = 'auto';
 }
+
 
 function closemobile(){
     document.getElementById('overlay').style.opacity = 0;
