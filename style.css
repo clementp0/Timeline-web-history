@@ -622,6 +622,7 @@ p {
     display: block;
     border-bottom: 1px solid grey;
 }
+
 .nav ul li a {
     position: relative;
     display: block;
@@ -632,6 +633,9 @@ p {
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+}
+.nav ul li a:hover{
+    cursor: pointer;
 }
 .nav ul li a:before {
     position: absolute;
