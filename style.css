@@ -76,7 +76,7 @@ body{
     top: 70%;
     margin-top: -5px;
     padding-left: 15px;
-    /*opacity: 0;*/
+    opacity: 0;
     right: calc(-100% - 56px);
 }
 .timeline-item:nth-child(even) {
@@ -195,7 +195,7 @@ body{
 }
 .overlay{
     opacity:0;
-    transition:2s;
+    transition:0.8s;
     pointer-events: none;
     padding-bottom: 15%;
     width: 100%;
